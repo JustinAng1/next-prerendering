@@ -25,8 +25,6 @@ export async function getStaticProps() {
   const response = await fetch('http://localhost:4000/products');
   const data = await response.json();
 
-  console.log("Hello World")
-
   return {
     props: {
       products: data,
